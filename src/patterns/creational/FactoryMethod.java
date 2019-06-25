@@ -63,13 +63,17 @@ public class FactoryMethod {
         }
     }
 
-    public FactoryMethod() {
-        ConstructionCompany pepperConstruction = new PepperConstruction();
-        ConstructionCompany shortConstruction = new ShortConstruction();
+    public FactoryMethod(String size) {
 
-        BuildingType pepperBuildingType = pepperConstruction.createBuilding().getBuildingType();
-        BuildingType shortBuildingType = shortConstruction.createBuilding().getBuildingType();
+        ConstructionCompany constructionCompany;
+        if (size.equals("Tall")) {
+            constructionCompany = new PepperConstruction();
+        }else{
+            constructionCompany = new ShortConstruction();
+        }
 
-        System.out.println(String.format("%s == %s: %b", pepperBuildingType, shortBuildingType, pepperBuildingType == shortBuildingType));
+        BuildingType sizeOf = constructionCompany.createBuilding().getBuildingType();
+
+        System.out.println(String.format("Size is: %s", sizeOf));
     }
 }

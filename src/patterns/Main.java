@@ -11,6 +11,6 @@ public class Main {
         Singleton singleton = Singleton.getInstance();
         System.out.println(singleton == Singleton.getInstance());
 
-        FactoryMethod factoryMethod = new FactoryMethod();
+        FactoryMethod factoryMethod = new FactoryMethod("Tall");
     }
 }
