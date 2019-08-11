@@ -1,7 +1,7 @@
 package patterns;
 
-import patterns.creational.FactoryMethod;
-import patterns.creational.Singleton;
+import patterns.creational.Factory.FactoryMethod;
+import patterns.creational.Singleton.Singleton;
 
 public class Main {
 

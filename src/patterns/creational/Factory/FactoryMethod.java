@@ -1,4 +1,4 @@
-package patterns.creational;
+package patterns.creational.Factory;
 
 /**
  * https://www.javatpoint.com/factory-method-design-pattern
